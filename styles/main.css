@@ -1,14 +1,11 @@
 /*** main structure ***/
 body {
   margin: 2%;
-}
-
-img {
-  max-width: 100%;
+  border: solid #000 1px;
 }
 
 header {
-  border: solid #000 1px;
+  background-color: #374960;
   padding: 10px;
   height: 70px;
 }
@@ -16,7 +13,9 @@ header {
 header h2 {
   float: left;
   display: inline-block;
-  margin-left: 30px;
+  margin: 12px 0 0 30px;
+  font-size: 2.5em;
+  padding: 0;
 }
 
 /*** header nav ***/
@@ -27,26 +26,33 @@ header nav {
 
 header nav li {
   display: inline-block;
-  line-height: 35px;
+  margin: 6px 0 0 20px;
+  font-size: 1.5em;
 }
 
-h1 {
-  text-align: center;
-  line-height: 35px;
-}
-
-/*** meowspace banner ***/
-#meowspace {
-  border: solid black 1px;
+/***  banners ***/
+section.banner:first-of-type {
   background-image: url("../assets/hero.jpg");
+}
+
+section.banner:last-of-type {
+  background-image: url("../assets/everybody.jpg");
+  margin-top: 30px;
+}
+
+section.banner {
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
   background-size: 100%;
   background-position: 0 50%;
-  height: 250px;
+  height: 300px;
 }
 
-#meowspace h1 {
+section.banner h1, section.banner h2 {
   font-size: 4em;
-  line-height: 2.6em;
+  margin-top: 90px;
+  text-align: center;
+  color: #fff;
 }
 
 /*** popular posts ***/
@@ -56,7 +62,7 @@ h1 {
 }
 
 .indent {
-  width: 85%;
+  width: 80%;
   margin: auto;
   /*border: solid #000 1px;*/
 }
@@ -68,9 +74,8 @@ h1 {
 }
 
 #popular-posts article {
-  position: relative;
   border: solid #000 1px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 1% 1%;
   float: left;
   width: 31%;
@@ -86,14 +91,54 @@ h1 {
   width: 80%;
   margin: auto;
   padding: 2%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 #popular-posts article p:first-of-type {
-  padding: 2%;
-  margin-bottom: 10px;
+  padding: 4%;
   min-height: 150px;
   text-align: justify;
+}
+
+#join-the-club {
+  margin-top: 30px 0;
+  padding: 20px 0;
+}
+
+#join-the-club section {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+}
+
+#join-the-club p {
+  text-align: justify;
+}
+
+#join-the-club img, footer nav {
+  width: 48%;
+  margin-left: 3%;
+}
+
+footer {
+  padding: 10px 0;
+}
+
+#disclaimer h4, #disclaimer p {
+  display: inline;
+}
+
+footer #disclaimer {
+  float: left;
+  width: 48%;
+  font-size: .75em;
+  text-align: justify;
+}
+
+footer nav {
+  display: inline-block;
+  width: 48%;
+  margin-left: 3%;
 }
 
 /*** fonts ***/
