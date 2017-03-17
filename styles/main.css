@@ -1,25 +1,52 @@
-/*** main structure ***/
+/*** google fonts ***/
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon|Rock+Salt');
+
+/*** general styling ***/
 body {
-  margin: 2%;
-  border: solid #000 1px;
+  width: 96%;
+  margin: auto;
+  border: solid #7F2915 2px;
 }
 
+main {
+  margin-top: 70px;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: #7F2915;
+  transition: all 0.25s;
+}
+
+a:hover {
+  color: #E5B182;
+}
+
+img {
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #7F2915;
+}
+
+/*** header ***/
 header {
-  background-color: #374960;
-  padding: 10px;
+  font-family: 'Coming Soon', cursive;
+  background-image: linear-gradient(#CC735F 0%, #E5B182 100%);
+  position: fixed;
+  z-index: 1;
   height: 70px;
+  width: inherit;
+  margin: auto;
 }
 
 header h2 {
-  float: left;
   display: inline-block;
   margin: 12px 0 0 30px;
   font-size: 2.5em;
   padding: 0;
-}
-
-header a {
-  
 }
 
 /*** header nav ***/
@@ -39,126 +66,140 @@ section.banner:first-of-type {
   background-image: url("../assets/hero.jpg");
 }
 
+section.banner h1 {
+  animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 section.banner:last-of-type {
   background-image: url("../assets/everybody.jpg");
   margin-top: 30px;
 }
 
 section.banner {
-  border-top: solid black 1px;
-  border-bottom: solid black 1px;
+  border-top: solid #7F2915 2px;
+  border-bottom: solid #7F2915 2px;
   background-size: 100%;
   background-position: 0 50%;
   height: 300px;
 }
 
 section.banner h1, section.banner h2 {
+  font-family: 'Rock Salt', cursive;
   font-size: 4em;
-  margin-top: 90px;
+  margin-top: 100px;
   text-align: center;
-  color: #fff;
+  color: #E5B182;
+  text-shadow: #000 1px 0 10px;
+}
+
+/*** repeated structural formatting ***/
+.indent {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.col-left {
+  display: inline-block;
+  float: left;
+  width: 48%;
+  vertical-align: top;
+}
+
+.col-right {
+  display: inline-block;
+  width: 47%;
+  margin-left: 5%;
+  vertical-align: top;
 }
 
 /*** popular posts ***/
+#popular-posts {
+  border-bottom: solid #7F2915 2px;
+  padding-bottom: 20px;
+}
+
 #popular-posts h2 {
+  text-align: center;
   font-size: 2em;
-  text-align: center;
-}
-
-.indent {
-  width: 80%;
-  margin: auto;
-  /*border: solid #000 1px;*/
-}
-
-#popular-posts h3 {
-  text-align: center;
-  padding: 0 5px 15px;
-  border-bottom: solid #000 1px;
+  font-family: 'Coming Soon', cursive;
+  color: #7F2915;
 }
 
 #popular-posts article {
-  border: solid #000 1px;
+  border: solid #7F2915 2px;
   border-radius: 10px;
-  margin: 1% 1%;
+  margin: 2%;
   float: left;
-  width: 31%;
-  min-height: 300px;
+  width: 28.5%;
+}
+
+#popular-posts h3 {
+  font-family: 'Coming Soon', cursive;
+  min-height: 42px;
+  background-color: #CC735F;
+  color: #7F2915;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
   text-align: center;
+  padding: 15px 4%;
+  margin: 0;
+  border-bottom: solid #7F2915 2px;
+}
+
+#popular-posts p:first-of-type {
+  padding: 4%;
+  height: 140px;
+  overflow: scroll;
 }
 
 #popular-posts a {
+  background-color: #CC735F;
   display: block;
   margin: auto;
   text-align: center;
-  border: solid #000 1px;
+  border: solid #7F2915 2px;
   width: 80%;
   margin: auto;
   padding: 2%;
   border-radius: 10px;
 }
 
-#popular-posts article p:first-of-type {
-  padding: 4%;
-  min-height: 150px;
-  text-align: justify;
+/*** join the club  ***/
+#join-the-club {
+  margin-top: 30px;
 }
 
-#join-the-club {
-  margin-top: 30px 0;
+#join-the-club h2 {
+  text-align: center;
+  color: #7F2915;
+  font-family: 'Coming Soon', cursive;
+}
+
+/*** footer ***/
+footer {
   padding: 20px 0;
 }
 
-#join-the-club section {
-  display: inline-block;
-  width: 48%;
-  vertical-align: top;
-}
-
-#join-the-club p {
-  text-align: justify;
-}
-
-#join-the-club img, footer nav {
-  width: 48%;
-  margin-left: 3%;
-}
-
-footer {
-  padding: 10px 0;
+footer #disclaimer {
+  font-size: .75em;
 }
 
 #disclaimer h4, #disclaimer p {
   display: inline;
 }
 
-footer #disclaimer {
-  float: left;
-  width: 48%;
-  font-size: .75em;
-  text-align: justify;
-}
-
 footer nav {
-  display: inline-block;
-  width: 48%;
-  margin-left: 3%;
+  font-family: 'Coming Soon', cursive;
+  font-size: 1.2em;
 }
 
-/*** fonts ***/
-a {
-  text-decoration: none;
-}
-
-/*** floats ***/
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
+/*** clear class ***/
 .clear {
   clear: both;
 }
