@@ -18,6 +18,10 @@ header h2 {
   padding: 0;
 }
 
+header a {
+  
+}
+
 /*** header nav ***/
 header nav {
   float: right;
